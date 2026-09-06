@@ -1,4 +1,4 @@
-﻿# âš½ Football Data Management API
+# ⚽ Football Data Management API
 
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
@@ -6,29 +6,29 @@
 
 A high-performance RESTful API built with Python (FastAPI) and SQLModel to manage relational data for football teams, players, and transfer history. Designed with microservice architecture principles for future cloud deployment.
 
-## ðŸŒŸ Key Features
+## 🌟 Key Features
 
 - **Robust Data Modeling:** Relational database schema built with SQLModel representing Teams, Players, and Player History.
 - **Secure Authentication:** Implements JWT (JSON Web Token) authentication (HS256) with secure password hashing using bcrypt.
 - **Role-Based Access Control (RBAC):** Distinct dmin and asic user roles to control access to sensitive endpoints.
 - **Cloud-Ready:** Lightweight and easily containerizable for deployment to AWS (EC2/ECS) or Kubernetes.
 
-## ðŸ—‚ï¸ Project Structure
+## 🗂️ Project Structure
 
 `	ext
-ðŸ“¦ Football-Data-Management-API-FastAPI-
- â”£ ðŸ“œ auth.py        # JWT configuration, password hashing, and RBAC logic
- â”£ ðŸ“œ main.py        # Database engine setup, data models, and API routing
- â”— ðŸ“œ README.md      # Project documentation
+📦 Football-Data-Management-API-FastAPI-
+ ┣ 📜 auth.py        # JWT configuration, password hashing, and RBAC logic
+ ┣ 📜 main.py        # Database engine setup, data models, and API routing
+ ┗ 📜 README.md      # Project documentation
 `
 
-## ðŸ› ï¸ Tech Stack
+## 🛠️ Tech Stack
 
 - **Framework:** FastAPI
 - **ORM & Database:** SQLModel, SQLite
 - **Security:** Passlib (bcrypt), python-jose (JWT)
 
-## ðŸš€ Quick Start
+## 🚀 Quick Start
 
 ### Prerequisites
 - Python 3.8+
