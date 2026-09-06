@@ -10,17 +10,17 @@ A high-performance RESTful API built with Python (FastAPI) and SQLModel to manag
 
 - **Robust Data Modeling:** Relational database schema built with SQLModel representing Teams, Players, and Player History.
 - **Secure Authentication:** Implements JWT (JSON Web Token) authentication (HS256) with secure password hashing using bcrypt.
-- **Role-Based Access Control (RBAC):** Distinct dmin and asic user roles to control access to sensitive endpoints.
+- **Role-Based Access Control (RBAC):** Distinct `admin` and `basic` user roles to control access to sensitive endpoints.
 - **Cloud-Ready:** Lightweight and easily containerizable for deployment to AWS (EC2/ECS) or Kubernetes.
 
 ## 🗂️ Project Structure
 
-`	ext
+```text
 📦 Football-Data-Management-API-FastAPI-
  ┣ 📜 auth.py        # JWT configuration, password hashing, and RBAC logic
  ┣ 📜 main.py        # Database engine setup, data models, and API routing
  ┗ 📜 README.md      # Project documentation
-`
+```
 
 ## 🛠️ Tech Stack
 
@@ -37,20 +37,20 @@ A high-performance RESTful API built with Python (FastAPI) and SQLModel to manag
 ### Installation
 
 1. **Clone the repository:**
-   `ash
+   ```bash
    git clone https://github.com/ImanMrd/Football-Data-Management-API-FastAPI-.git
    cd Football-Data-Management-API-FastAPI-
-   `
+   ```
 
 2. **Install dependencies:**
-   `ash
+   ```bash
    pip install fastapi uvicorn sqlmodel passlib[bcrypt] python-jose[cryptography]
-   `
+   ```
 
 3. **Run the API server:**
-   `ash
+   ```bash
    uvicorn main:app --reload
-   `
+   ```
 
 4. **Access the API Docs:**
-   Navigate to http://127.0.0.1:8000/docs in your browser to interact with the auto-generated Swagger UI.
+   Navigate to `http://127.0.0.1:8000/docs` in your browser to interact with the auto-generated Swagger UI.
